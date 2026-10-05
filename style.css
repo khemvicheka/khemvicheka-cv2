@@ -1,0 +1,203 @@
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8edf2;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cv {
+    width: 900px;
+    max-width: 95%;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 5px 20px #999;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background: #17365d;
+    color: white;
+}
+
+.header-info h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.header-info h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #b9d7f5;
+    margin-bottom: 15px;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+address a {
+    color: white;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- PHOTO ---------- */
+
+.photo {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+
+/* ---------- MAIN ---------- */
+
+main {
+    padding: 35px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #17365d;
+    border-bottom: 3px solid #4d8b45;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- PERSONAL INFORMATION ---------- */
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 8px;
+    background: #f5f7fa;
+    padding: 20px;
+    border-left: 5px solid #4d8b45;
+}
+
+.personal-info strong {
+    color: #17365d;
+}
+
+
+/* ---------- OBJECTIVE ---------- */
+
+.objective {
+    background: #f5f7fa;
+    padding: 20px;
+    border-left: 5px solid #17365d;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.skill {
+    background: #f5f7fa;
+    padding: 18px;
+    border-radius: 5px;
+    border-top: 4px solid #4d8b45;
+}
+
+.skill h3 {
+    color: #17365d;
+    margin-bottom: 8px;
+}
+
+
+/* ---------- EDUCATION ---------- */
+
+.education-item,
+.project-item {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-left: 4px solid #4d8b45;
+    background: #f5f7fa;
+}
+
+.education-item h3,
+.project-item h3 {
+    color: #17365d;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #4d8b45;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* ---------- LIST ---------- */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #17365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+    .cv {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+}
